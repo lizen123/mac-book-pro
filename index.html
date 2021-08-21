@@ -19,8 +19,8 @@
                 <img class="w-3/4" src="./images/mac.png" alt="Mac Book Pro">
             </div>
 
-             <div class="text-justify">
-                    <div>
+             <div >
+                    <div class="text-justify">
                         <h1 class="text-3xl font-semibold">Customize your Blue 24‑inch iMac with Apple M1 chip.</h1>
                             <p>
                                 Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine
@@ -90,35 +90,50 @@
                 <!-- Delivery-button End-->
                 <!-- ***** -->
                 <!--Product Price Start -->
-
-                <table class="mt-14 mb-5 ">
+                
+                <table class="mt-14 mb-3 ">
                     <tbody> 
+
+                        <!-- default value of mac -->
+
                         <tr class="font-bold border-b-2">
                             <td>Best Price</td>
                             <td class="border-b-2">$<span>1299</span></td>
                           </tr>
+
+                          <!-- memory value -->
+
                           <tr class=" font-bold border-b-2">
                             <td>Extra Memory Cost</td>
                             <td>$<span class="memory_cost" id="default_cost_memory">0</span></td>
                           </tr>
+
+                          <!-- storage value -->
+
                           <tr class="font-bold border-b-2">
                             <td>Extra Storage Cost</td>
                             <td>$<span class="storage_cost"id="default_cost_storage">0</span></td>
                           </tr>
+
+                          <!-- delivery cost -->
+
                           <tr class="font-bold border-b-2 border-black">
                             <td>Delivary Charge</td>
                             <td>$<span class="delivery_cost" id="default_delivery">0</span></td>
                           </tr>
-                          <tr class="font-bold"  >
+
+                          <!-- total value -->
+
+                          <tr class="font-bold border-b-2">
                             <td>Total</td>
-                            <td>$<span class="total_price">0</span></td>
+                            <td>$<span class="total_price">1299</span></td>
                           </tr>
                         </tbody>
                       </table>
-
+                    
                     <!--Product Price End -->
                         <!-- ***** -->
-                    <!-- Input Voucher Code Start-->
+                    <!-- Input promo Code Start-->
 
                 <div class="mb-2" >
                         <label class="block font-medium text-xl" for="clickable">Add Promo Code</label>
@@ -131,18 +146,19 @@
                  </div>
 
                     <!-- Input Voucher Code End -->
-                    
                 </div>
             </section>
 
             <!-- Total Price -->
 
     <section>
-        <hr class="mt-5">
-        <h1 class="font-medium text-6xl text-center p-4">Total: $<span class="total" id="Discount-Amount">0</span></h1>
+        <hr class="mt-5 ml-14 mr-14">
+
+        <!-- after use promo code balance -->
+
+        <h1 class="font-medium text-6xl text-center p-4">Total: $<span class="total" id="Discount-Amount">1299</span></h1>
     </section>
     </main>
-
 
     <footer>
         <!-- Nothing here too -->
