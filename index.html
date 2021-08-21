@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Book Pro</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!-- Nothing Here -->
+    </header>
+
+    <main>
+        <section class="grid grid-cols-2 container mt-12">
+
+            <div class="ml-40">
+                <img class="w-3/4" src="./images/mac.png" alt="Mac Book Pro">
+            </div>
+
+             <div class="text-justify">
+                    <div>
+                        <h1 class="text-3xl font-semibold">Customize your Blue 24‑inch iMac with Apple M1 chip.</h1>
+                            <p>
+                                Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine
+                                8GB unified memory
+                                256GB SSD storage
+                                Two Thunderbolt / USB 4 ports
+                                Magic Mouse
+                                Magic Keyboard - US English
+                            </p>
+                    </div>
+
+                        <!-- Memory-button Start -->
+
+                    <div class="mt-5">
+                        <div class="font-bold text-xl">
+                            <h2>Memory</h2>
+                            </div>
+                             <div class="mt-2">
+                              <button class="border border-gray-500 hover:bg-gray-400 text-black font-medium py-2 px-1 rounded inline-flex items-center mr-2">
+                              <span id="default_price_memory">8GB unified memory</span>
+                              </button>
+                              <button class="border border-gray-500 hover:bg-gray-400 text-black font-medium py-2 px-1 rounded inline-flex items-center">
+                              <span id="extra-amount">16GB unified memory</span>
+                              </button>
+                             </div>
+                    </div>
+
+                <!-- Memory-button End -->
+                <!-- ***** -->
+                <!-- Storage-button Start -->
+
+                 <div class="mt-12">
+                    <div class="font-bold text-xl">
+                        <h2>Storage</h2>
+                    </div>
+                        <div class="mt-2">
+                            <button class="border border-gray-500 hover:bg-gray-400 text-black font-medium py-2 px-1 rounded inline-flex items-center mr-2">
+                            <span id="default_price_storage">256GB SSD storage</span>
+                            </button>
+                            <button class="border border-gray-500 hover:bg-gray-400 text-black font-medium py-2 px-1 rounded inline-flex items-center mr-2">
+                            <span id="extra-price">512GB SSD storage</span>
+                            </button>
+                            <button class="border border-gray-500 hover:bg-gray-400 text-black font-medium py-2 px-1 rounded inline-flex items-center">
+                            <span id="2xl-price">1TB SSD storage</span>
+                           </button>
+                        </div>
+                </div>
+
+                <!-- Storage-button End -->
+                <!-- ***** -->
+                <!-- Delivery-button Start -->
+
+                 <div class="mt-12">
+                    <div class="font-bold text-xl">
+                        <h2>Choose Your Delivery Option</h2>
+                    </div>
+                    <div class="mt-2">
+                        <button class="border border-gray-500 hover:bg-gray-400 text-black font-medium py-2 px-1 rounded inline-flex items-center mr-2">
+                        <span id="default-delivery">Friday,Aug 25 Free Prime Delivery</span>
+                          </button>
+                        <button class="border border-gray-500 hover:bg-gray-400 text-black font-medium py-2 px-1 rounded inline-flex items-center">
+                        <span id="delivery-charge">Friday,Aug 21 Delivery Charge $20 </span>
+                          </button>
+                    </div>
+                </div>
+
+                <!-- Delivery-button End-->
+                <!-- ***** -->
+                <!--Product Price Start -->
+
+                <table class="mt-14 mb-5 ">
+                    <tbody> 
+                        <tr class="font-bold border-b-2">
+                            <td>Best Price</td>
+                            <td class="border-b-2">$<span>1299</span></td>
+                          </tr>
+                          <tr class=" font-bold border-b-2">
+                            <td>Extra Memory Cost</td>
+                            <td>$<span class="memory_cost" id="default_cost_memory">0</span></td>
+                          </tr>
+                          <tr class="font-bold border-b-2">
+                            <td>Extra Storage Cost</td>
+                            <td>$<span class="storage_cost"id="default_cost_storage">0</span></td>
+                          </tr>
+                          <tr class="font-bold border-b-2 border-black">
+                            <td>Delivary Charge</td>
+                            <td>$<span class="delivery_cost" id="default_delivery">0</span></td>
+                          </tr>
+                          <tr class="font-bold"  >
+                            <td>Total</td>
+                            <td>$<span class="total_price">0</span></td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+
+                    <!--Product Price End -->
+                        <!-- ***** -->
+                    <!-- Input Voucher Code Start-->
+
+                <div class="mb-2" >
+                        <label class="block font-medium text-xl" for="clickable">Add Promo Code</label>
+                        <input id="clickable" class="input_promo_code rounded p-1 border-2 border-black mt-1" type="text">
+                        <button
+                        id="button" class=" bg-gray-400 hover:bg-red-700 text-white font-medium px-3 py-1.5 rounded inline-flex promo_btn">
+                            Apply
+                        </button>
+                        <p class="wrong_promo_code text-red-500"></p>
+                 </div>
+
+                    <!-- Input Voucher Code End -->
+
+                </div>
+            </section>       
+            </main>
+       
+            <!-- Total Price -->
+
+    <footer>
+        <hr class="mt-5">
+        <h1 class="font-medium text-6xl text-center p-4">Total: $<span class="total" id="Discount-Amount">0</span></h1>
+    </footer>
+
+    <!-- js Link -->
+
+    <script src="./js/index.js"></script>
+
+</body>
+</html>
