@@ -70,10 +70,6 @@ promoBtn.addEventListener('click', function() {
 const promoCode = "stevekaku";
         if (promoCode == inputPromoCode.value) {
             total.innerText  = parseInt(finalBalance - (finalBalance * 20) / 100);
-        }
-        else if(promoCode != inputPromoCode.value){
-const error =  document.querySelector(".wrong_promo_code");
-          error.innerText = "Wrong promo code";
           inputPromoCode.value='';
         }
     })
