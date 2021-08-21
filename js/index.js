@@ -56,7 +56,6 @@ const deliveryPrice = document.querySelector('.delivery_cost').innerText;
 const defaultPrice = 1299;
 const totalPrice = document.querySelector('.total_price');
 const total = document.querySelector('.total');
-    
 totalPrice.innerText = defaultPrice + parseInt(memoryPrice) + parseInt(storagePrice1) + parseInt(deliveryPrice)
 const finalBalance = total.innerText = defaultPrice + parseInt(memoryPrice) + parseInt(storagePrice1) + parseInt(deliveryPrice);
 
@@ -67,11 +66,10 @@ const promoBtn = document.querySelector(".promo_btn");
 
     // discount after price
 
-promoBtn.addEventListener('click', function () {
-const promoCode = "stevekaku"
+promoBtn.addEventListener('click', function() {
+const promoCode = "stevekaku";
         if (promoCode == inputPromoCode.value) {
-            total.innerText =parseInt(finalBalance - (finalBalance * 20 / 100));
-
+            total.innerText  = parseInt(finalBalance - (finalBalance * 20) / 100);
         }
         else if(promoCode != inputPromoCode.value){
 const error =  document.querySelector(".wrong_promo_code");
